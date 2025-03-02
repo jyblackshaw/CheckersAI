@@ -1,6 +1,8 @@
 from random import randint
 from BoardClasses import Move
 from BoardClasses import Board
+
+
 #The following part should be completed by students.
 #Students can modify anything except the class name and exisiting functions and varibles.
 class StudentAI():
@@ -14,6 +16,7 @@ class StudentAI():
         self.color = ''
         self.opponent = {1:2,2:1}
         self.color = 2
+
     def get_move(self,move):
         if len(move) != 0:
             self.board.make_move(move,self.opponent[self.color])
@@ -25,3 +28,4 @@ class StudentAI():
         move = moves[index][inner_index]
         self.board.make_move(move,self.color)
         return move
+

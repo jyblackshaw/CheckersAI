@@ -10,7 +10,7 @@ import os
 import sys
 
 sys.path.append("src/checkers-python/")  # Add path to GameLogic and StudentAI
-sys.path.append("Tools/Sample_AIs/Random_AI/")  # Path to Random AI
+sys.path.append("Tools/Sample_AIs/Poor_AI/")  # Path to Random AI
 
 from GameLogic import GameLogic
 from socket import *
