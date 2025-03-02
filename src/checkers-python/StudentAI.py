@@ -74,6 +74,10 @@ def rollout(node, board, team):
     while True:
         moves = board.get_all_possible_moves(turn)
         if moves == []:
+            if turn == 1:
+                turn = 2
+            else:
+                turn = 1
             v = board.is_win(turn)
             if v ==0:
                 return .5
